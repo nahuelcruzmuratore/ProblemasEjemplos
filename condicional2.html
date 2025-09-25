@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="numero" placeholder="Ingresar numero">
+    <button onclick="Calcular()">Cacular</button>
+
+    <script>
+        function Calcular() {
+            let numero = parseInt(document.getElementById("numero").value)
+            if (numero % 2 === 0)
+        {
+            alert("Es par")
+        }else {
+            alert("es inpar")
+        }
+            
+        }
+
+
+    </script>
+    
+</body>
+</html>

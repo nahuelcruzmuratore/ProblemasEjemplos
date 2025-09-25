@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>
+     Este ejercicio dirigirá a los clientes a la barra de bebidas o a la de comidas,
+      para ello el cliente puede pedir
+    vino, cerveza, refresco, agua. Si pide una cerveza o vino se le dirige a la barra y 
+    si no pues se le dirige a la tienda.
+    </h5>
+
+<input type="text" id="bebida" placeholder="ingresar bebida"> 
+<button onclick="dirigir()" >Ingresar bebida</button>
+
+<script>
+
+    function dirigir() {
+        
+
+let tipoBebida = document.getElementById("bebida").value;
+
+if (tipoBebida == "cerveza" || tipoBebida == "vino " )
+{
+    alert("deber ur a la barra de bebidas")
+}
+else ( tipoBebida === "agua" || tipoBebida === "refresco" )
+{
+    alert ("debes ir a la tuenda")
+}
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h5> En este ejercicio debes pedir dos números enteros y devolver el 
+        cociente de dividir el primero entre el segundo, pero
+    si el segundo es cero no debe hacer la división, sino lanzar un mensaje de error</h5>}
+
+    <input type="number" id="num1" placeholder="ingresar dividendo">
+    <input type="number" id="num2" placeholder="ingresar divisor">
+    <button onclick="Calcular()"> Calcular</button>
+
+    <script>
+
+        function Calcular() {
+            
+     
+        let dividendo = parseInt(document.getElementById("num1").value);
+        let divisor = parseInt(document.getElementById("num2").value);
+        let resultado = dividendo / divisor;
+
+        if(divisor === 0)
+    {
+        alert("error : no se puede dividir por 0")
+    }
+    else {
+        alert("el cociente es "+ resultado )
+    }
+
+        }
+    </script>
+</body>
+</html>
