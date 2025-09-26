@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h6>
+        Enunciado: Ingresar la edad de una persona y
+        clasificarla como niño, adolescente, adulto o adulto mayor.
+    </h6>
+
+    <script>
+        let edad = parseInt(prompt("ingresa edad"));
+
+        switch (true) {
+            case (edad >= 1 && edad <= 11):
+                alert("es niño")
+                break;
+
+            case (edad > 12 && edad <= 29):
+                alert("es adolescente")
+                break;
+
+
+            case (edad > 30 && edad <= 55):
+                alert("es adulto")
+                break;
+
+            case (edad >= 56 && edad <= 200):
+                alert("es adulto mayor")
+                break;
+
+                default :
+                alert("Usted supero o esta mientiendo, el valor no es valido")
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

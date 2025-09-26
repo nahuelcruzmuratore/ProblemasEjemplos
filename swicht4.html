@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h6>El usuario ingresa dos números y la operación (+, -, *, /).
+        Mostrar el resultado.</h6>
+
+
+    <script>
+        let num1 = parseFloat(prompt("ingresa numero 1"));
+        let num2 = parseFloat(prompt("ingresa numero 2"));
+        let operacion = prompt ("ingrese la operacion +,-,/,*");
+
+        switch (operacion) {
+            case '+':
+                alert("el resultado es " + (num1 + num2));
+                break;
+
+                   case '-':
+                alert("el resultado es " + (num1 - num2));
+                break;
+
+                       case '/':
+                alert("el resultado es " + (num1 / num2));
+                break;
+                    
+                        case '*':
+                alert("el resultado es " + (num1 * num2));
+                break;
+      
+            default:
+                break;
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Ejercicio Restaurante</h1>
+    <h5>El usuario debe ingresar un tipo de menú (carne, pescado, verdura) y
+        el programa le debe indicar la bebida
+        correspondiente</h5>
+
+    <script>
+        let menu = prompt("Ingrese el tipo de menu : Carne,pescado,verdura").toLowerCase();
+
+        switch (menu) {
+            case 'carne':
+                alert("se recomienda vino blanco");
+                break;
+
+            case 'pescado':
+                alert("se recomienda vino rosado");
+                break;
+
+            case 'cordero':
+                alert("se recomienda vino patero");
+                break;
+
+            default:
+                alert("eso no esta en el inventario");
+        }
+    </script>
+
+</body>
+
+</html>
