@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Usando un bucle while escribir un script que pida un valor entero y cree
+         una lista con los números desde el 0 al
+    valor tecleado. Luego deberá sacar esa lista con un alert. Los números
+     se separarán por comas.</h2>
+
+     <script>
+let numMeximo = parseInt(prompt("Ingresar numero"));
+
+let contar = 0; 
+let lista ='';
+
+while (contar < numMeximo) {
+    lista += contar + ', '
+    contar++; 
+
+}
+
+lista += contar;
+
+alert ("esta es la lista de numero " + lista)
+
+
+     </script>
+    
+</body>
+</html>

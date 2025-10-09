@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let mensaje = "Hola desde el ambito Global" // ambito global
+        let saludos = "Hola mundo" // ambito global
+        let mensajeNuevo = "Probando" // ambito global
+
+
+
+        function saludar() {
+            let mensaje = "Hola mundo estamos en programacion" //ambito local
+            console.log(mensaje)
+            let mensajeNuevo = "Probando" // una declaracion de varabiale que no se podria llamar dentro de otra variable 
+            
+        }
+
+
+
+        function saludo() {
+        console.log(mensajeNuevo)
+              
+
+        }
+
+        saludar ();//llamada de funcion
+        saludo(); //llamada de funcion
+
+
+
+
+    
+
+
+
+    </script>
+    
+</body>
+</html>
