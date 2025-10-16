@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h6>2 En este script vas a crear un menu con tres opciones: escribir, leer,
+        salir. El usuario elegirá una opción y en un
+        alert se le indicará la opción elegida. El programa vuelve a mostrar el menu
+        y se repite el proceso.
+        El script acabará
+        cuando se pulse la opción de salir.</h6>
+
+
+
+
+    <script>
+
+        let opcion;
+        do {
+            opcion = prompt("Ingresa la opcion -Escribir --- ").toLowerCase();
+
+            switch (opcion) {
+                case "escribir":
+                    alert("Opcion Escribir")
+                    break;
+
+                case "leer":
+                    alert("Opcion leer")
+                    break;
+
+                case "salir":
+                    alert("Opcion salir")
+                    break;
+
+                default:
+                    alert("Opcion no valida")
+                    break;
+            }
+
+
+        } while (opcion !== "salir");
+
+
+
+    </script>
+</body>
+
+</html>

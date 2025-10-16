@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h6>2 Se trata de que dado un número entero el script muestre una cuenta atrás, es decir,
+         una lista de numeros separados
+    por comas desde el número tecleado hasta el 0.</h6>
+
+    <script>
+let lista = " ";
+let numeroMax = parseInt(prompt("Ingrese el numero"));
+
+for (let contar  = numeroMax; contar > 0; contar --) {
+  lista += contar  + " ,"
+  
+  }
+    alert (lista)
+
+
+    </script>
+</body>
+</html>

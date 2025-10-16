@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h6>3 En este script se le pide al usuario que teclee dos números,
+        el script mostrará la suma y pedirá al usuario si queire
+        repetir. Si teclea S repite y si teclea N el programa sale. No debe aceptar otras teclas</h6>
+
+    <script>
+        let numero1;
+        let numero2;
+        let repetir;
+
+        do {
+
+            numero1 = parseInt(prompt("Ingresar numero 1 "));
+            numero2 = parseInt(prompt("Ingresar numero 2 "));
+
+            let suma = numero1 + numero2;
+            alert("la suma es " + suma);
+
+            repetir = prompt("repetir S / N").toUpperCase();
+            if (repetir !== "S" && repetir !== "N") {
+                alert("Ingrese solo S O N ")
+                repetir = "S";
+            }
+
+
+        } while (repetir === "S");
+
+    </script>
+
+
+</body>
+
+</html>
