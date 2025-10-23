@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h6>
+        3) Se quiere un bucle que genere una lista con todos los números pares positivos por debajo del número
+         tecleado por el
+        usuario. Los números se aparecerán en una ventana alert con cambios de linea (carácter '\n').
+    </h6>
+
+    <script>
+
+        let max = parseInt(prompt("Ingrese numero")); // ingreso de datos
+        let par = 0; // variable para guardar el numero actual
+        let lista = " "; // acumularo aca se guardan todos los numeros pares 
+
+        for (let contador = 1; par < max ; contador++) {
+           
+            par = contador * 2 ;
+
+            lista += par + " \n";
+            
+        }alert(lista)
+    </script>
+
+</body>
+</html>

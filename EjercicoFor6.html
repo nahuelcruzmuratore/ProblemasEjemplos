@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h6>6)Programa un script que pida al usuario que teclee 4 números (uno cada vez). Con esos números el programa deberá
+    calcular la media aritmética. O sea la suma de los 4 números dividida entre 4</h6>
+
+    <script>
+
+let suma = 0; 
+
+for (let i = 1; i <= 4; i++) {
+    let numCiclo = parseFloat(prompt("ingresar numero" + i))
+    suma += numCiclo;
+}
+let media = suma /4;
+
+alert("la media es " + media)
+
+    </script>
+</body>
+</html>
