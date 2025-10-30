@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h6>
+    3. Pedir al usuario que ingrese el nombre y la cantidad de un producto.
+        El programa seguirá pidiendo productos mientras el usuario no escriba “fin”.
+        Al finalizar, mostrará un listado con todos los productos y sus cantidades.
+
+    </h6>
+
+    <script>
+    let nombreProducto = prompt("Ingresar nombre");
+    let listado = " ";
+
+    while (nombreProducto !== "fin" ) {
+        let cantidad = parseInt(prompt("Ingresar cantidad del producto" + nombreProducto));
+        listado += nombreProducto + " : " + cantidad + " \n";
+
+        nombreProducto = prompt("Ingresar nombre");
+    
+    }alert("istado de producto y cantidad " + listado)
+
+    </script>
+
+</body>
+</html>

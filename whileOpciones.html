@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h6>
+    Mostrar un menú con las siguientes opciones:
+    1- Leer datos
+    2- Mostrar datos
+    3- Fin
+    El usuario deberá teclear una opción.
+    Si el valor ingresado no está en el menú, se mostrará un mensaje de error y se volverá a pedir un número de opción.
+    El programa finaliza al ingresar el número 3.
+</h6>
+    <script>
+        
+        let opción = parseInt(prompt("Ingresar la opion "  + "\n"+  "  1- Leer datos "  + "\n" +" 2 - Mostrar datos"   + "\n" + " 3  Fin "))
+       
+        while (opción !== 3) {
+            switch (opción) {
+                case 1:
+                    alert("Leer")
+                    break;
+
+                       case 2:
+                    alert("Mostar" )
+                    break;
+
+                       case 3:
+                    alert("fin")
+                    break;
+            
+
+                default:
+                    alert("El valor ingresado no existe")
+                    break;
+            }
+
+            
+        }
+          
+
+    </script>
+</body>
+</html>

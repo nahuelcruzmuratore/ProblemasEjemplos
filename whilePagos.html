@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h6>Pedir al usuario que ingrese montos de pagos realizados.
+Si el monto ingresado es negativo, mostrar un error y volver a pedir.
+El programa terminará cuando el usuario ingrese 0, y mostrará la suma total de pagos.
+</h6>
+    <script>
+        let monto = parseFloat(prompt("ingresar monto"));
+        let suma = 0; // acumulador
+
+        while (monto !== 0) {
+            if (monto < 0) {
+                alert("el monto es negativo")
+            }else
+            {
+                suma += monto;
+            }
+            monto = parseFloat(prompt("ingresar monto"));
+        }
+        alert(" la suma total de pago es " + suma)
+    </script>
+    
+</body>
+</html>
