@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h6>Registro de temperaturas:
+    Pedir temperaturas diarias hasta que el usuario escriba "fin". Mostrar la temperatura más alta y la más baja
+    registradas.
+</h6>
+   
+
+<script>
+
+   
+    let temMax = 0; // guardamos la temperatura maxima
+    let temMin = Infinity;  // guardamos la temperatura maxima, compara con un numero, luego remplaza
+
+
+    let entrada = (prompt("Ingresar temperatura"))
+
+    while (entrada !== "fin") {
+
+        let temperatura = parseFloat(entrada);
+
+        if (temperatura > temMax) temMax = temperatura;
+
+        if (temperatura < temMin) temMin = temperatura;
+
+        entrada = (prompt("Ingresar temperatura"))
+
+
+    }
+    alert("la temperatura maxia es " + temMax + "temperatura minima es" + temMin)
+  
+
+</script>
+</body>
+</html>
