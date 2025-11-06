@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<h6>Ejercicio — Listado de productos
+Escribe un script en JavaScript que tenga un arreglo con varios nombres de productos (por ejemplo: Notebook, Monitor,
+Teclado, Mouse).
+El programa debe recorrer el arreglo utilizando un bucle for...of, copiar los elementos en una nueva lista y luego
+mostrar el listado completo en pantalla, separando cada producto en una línea diferente.
+</h6>
+<body>
+    
+<script>
+let productos = ["Notebook", "Monitor", "Teclado", "Mouse"]
+let lista = [];
+
+for (let producto of productos) {
+
+    lista.push(producto);
+    
+}
+
+alert(lista.join("\n"));
+
+</script>
+
+
+
+</body>
+</html>

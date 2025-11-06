@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h6>
+        Escribe un script en JavaScript que solicite al usuario ingresar:
+        1. La cantidad de empleados de una empresa.
+        2. La meta de ventas establecida.
+        3. El monto de venta alcanzado por cada empleado.
+        El programa deberá almacenar todas las ventas en un arreglo, recorrerlo y contar cuántos empleados alcanzaron o
+        superaron la meta.
+        Finalmente, mostrará mediante una alerta cuántos empleados cumplieron el objetivo.
+    </h6>
+
+
+    <script>
+        let cantidadEmpleados = parseInt(prompt("cantidad de empleados"));
+        let meta = parseInt(prompt("Ingresar la meta de ventas "));
+        let ventaEmpleados = [];
+
+        for (let i = 0; i < cantidadEmpleados; i++) {
+            let venta = parseInt(prompt("Ingresar la venta del empleado " + (i + 1)));
+           ventaEmpleados.push(venta)   
+        }
+
+        let cumpleMeta = 0;
+
+        for (let ven of ventaEmpleados) {
+            if (ven >= meta) {
+                cumpleMeta++;
+            }
+            
+        }
+
+        alert("Empleados que cumplieromn la meta " + cumpleMeta)
+
+
+
+    </script>
+</body>
+
+</html>

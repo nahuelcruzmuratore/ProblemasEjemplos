@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<h6>
+    Escribe un script en JavaScript que permita analizar el desempeño de un grupo de empleados.
+    El programa cuenta con un arreglo que contiene los montos de ventas realizadas por cada empleado durante el mes.
+    Además, se define una meta de ventas establecida por la empresa (por ejemplo, $15.000).
+    El programa deberá recorrer el arreglo y:
+    1. Contar cuántos empleados cumplieron o superaron la meta.
+    2. Contar cuántos no alcanzaron la meta.
+    3. Mostrar ambos resultados mediante alertas o en consola.
+
+</h6>
+<body>
+    
+    <script>
+   let ventasRealizadas = [12000, 1300 ,40000, 55000 , 6500, 8000];
+   let meta = 15000;
+
+   let cumpleMeta = 0;
+   let noCumpleMeta= 0;
+
+
+   for (let venta of ventasRealizadas) {
+    if(venta >= meta){
+        cumpleMeta++;
+    }else if (venta <= meta)
+    {
+        noCumpleMeta++
+    }
+    
+   }
+
+   alert("Empleados que cumplieron" + cumpleMeta);   
+  alert("Empleados que no cumplieron" + noCumpleMeta)
+    </script>
+
+
+</body>
+</html>
