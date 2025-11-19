@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ventas = parseFloat(prompt("Ingrese las ventas mensuales de la sucursal ($):"));
+        let stock = parseInt(prompt("Ingrese el stock disponible:"));
+        let satisfaccion = parseInt(prompt("Ingrese el nivel de satisfacción de clientes (1-10):"));
+
+     
+     
+         if (ventas < 50000 || stock < 200 || satisfaccion < 5) {
+            alert("Sucursal en riesgo, revisar gestión");
+        }
+   
+        else if (ventas >= 100000 && stock >= 500 && satisfaccion >= 9) {
+            alert("Sucursal excelente");
+        }
+  
+        else {
+            alert("Sucursal estándar");
+        }
+    </script>
+
+</body>
+</html>

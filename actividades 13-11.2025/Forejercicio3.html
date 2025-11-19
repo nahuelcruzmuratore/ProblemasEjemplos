@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h6>
+    Se desea analizar el desempeño de 5 empleados en un mes usando arrays para almacenar los datos.
+    El programa solicita al usuario:
+    o La meta mensual de ventas.
+    o Para cada empleado:
+     Nombre
+     Ventas realizadas
+     Nivel de satisfacción del cliente (1 a 10)
+    Se deben utilizar arrays para guardar los nombres de los empleados según su desempeño:
+    o excelente → empleados que cumplen la meta y tienen satisfacción ≥ 7
+    o mejorar → empleados que cumplen la meta pero tienen satisfacción < 7 o no cumple → empleados que no alcanzan la meta
+        Según los datos ingresados, se clasifica a cada empleado y se agrega su nombre al array correspondiente. Al
+        finalizar, el programa muestra un resumen final con los nombres de los empleados en cada categoría y, opcionalmente,
+        la cantidad de empleados en cada array.
+
+</h6>
+    <script>
+        let meta = parseInt(prompt("ibgrese la meta mensual de ventas"));
+
+
+        let excelente = []
+        let mejorar = []
+        let nocumple = []
+
+        for (let i = 1; i <=5; i++) {
+            let nombre = prompt("Nombre del empleado " + i)
+            let venta = parseInt(prompt("ventas de " + nombre))
+            let satisfaccion = parseInt(prompt("Nivel de satifacion del cliente 1 - 10" + nombre))
+
+            if (venta >= meta && satisfaccion >= 7) 
+        {
+            excelente.push(nombre);
+        }else if (venta >= meta && satisfaccion <7)
+        {
+            mejorar.push(nombre)
+        }else
+        {
+            nocumple.push(nombre)
+        }
+            
+        }
+    alert(
+         
+        " Excelente desempeño : " + excelente.join(", ") + "\n" +
+        " Cumple ventas, mejorar atención " + mejorar.join(", ") + "\n" +
+        " No alcanzó la meta " + nocumple.join(", ")
+    );
+
+    </script>
+</body>
+</html>

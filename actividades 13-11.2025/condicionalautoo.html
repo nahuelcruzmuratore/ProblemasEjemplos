@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<h6>
+Se ingresa información de un auto: Marca (Toyota, Ford, BMW, Tesla) Tipo (sedán, SUV, pickup, eléctrico) Año de
+fabricación El programa debe clasificar y dar recomendaciones según estas reglas:
+1. Si es Tesla y tipo eléctrico y año ≥ 2023 → "Auto eléctrico de última generación"
+2. Si es BMW y tipo sedán → "Auto de lujo"
+3. Si es Ford y tipo pickup y año ≥ 2018 → "Pickup confiable"
+4. Si es Toyota y tipo SUV → "SUV familiar confiable"
+5. Si el año < 2010 → "Auto antiguo, revisar mantenimiento" 6. Resto → "Auto estándar"
+</h6>
+<body>
+    <script>
+
+        let marca = prompt("Ingrese la marca del auto (Toyota, Ford, BMW, Tesla):").toLowerCase();
+        let tipo = prompt("Ingrese el tipo de auto (sedán, SUV, pickup, eléctrico):").toLowerCase();
+        let año = parseInt(prompt("Ingrese el año de fabricación del auto:"));
+
+        if (marca === "tesla" && tipo === "eléctrico" && año >= 2023) {
+            alert("Auto eléctrico de última generación");
+        } else if (marca === "bmw" && tipo === "sedán") {
+            alert("Auto de lujo");
+        } else if (marca === "ford" && tipo === "pickup" && año >= 2018) {
+            alert("Pickup confiable");
+        } else if (marca === "toyota" && tipo === "suv") {
+            alert("SUV familiar confiable");
+        } else if (año < 2010) {
+            alert("Auto antiguo, revisar mantenimiento");
+        } else {
+            alert("Auto estándar");
+        }
+
+
+    </script>
+</body>
+
+</html>

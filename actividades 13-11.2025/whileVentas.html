@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h6>
+        Enunciado del ejercicio: Registro de Ventas Diarias
+        Desarrollar un programa en JavaScript que permita registrar las ventas diarias de un vendedor y evaluar su
+        rendimiento
+        según el promedio de ventas.
+        Descripción:
+        El programa debe permitir al usuario ingresar, de forma repetida, el monto de ventas realizadas cada día.
+        Cada ingreso corresponde a las ventas de un día.
+        El programa finaliza cuando el usuario ingresa 0.
+        No se permiten valores negativos; si el usuario ingresa un número negativo, se debe mostrar una alerta indicando
+        que elvvalor no es válido.
+        Al finalizar, el programa debe:
+        -Calcular y mostrar el promedio de ventas por día.
+        -Evaluar el rendimiento del vendedor según el promedio:
+        -Promedio mayor a 1000 → "Rendimiento excelente"
+        -Promedio entre 500 y 1000 → "Rendimiento bueno"
+        -Promedio menor a 500 → "Rendimiento bajo"
+    </h6>
+    <script>
+
+
+        let totalVentas = 0;
+        let dias = 0;
+        let venta = parseFloat(prompt("Ingrese la venta del día (0 para finalizar)"));
+
+        while (venta !== 0) {
+            if (venta >= 0) {
+                totalVentas += venta;
+                dias++;
+            } else {
+                alert("No puede ingresar ventas negativas");
+            }
+            venta = parseFloat(prompt("Ingrese la venta del día (0 para finalizar)"));
+        }
+
+
+        let promedio = totalVentas / dias;
+        alert("Promedio de ventas: $" + promedio.toFixed(2));
+
+        if (promedio > 1000) alert("Rendimiento excelente");
+        else if (promedio >= 500) alert("Rendimiento bueno");
+        else alert("Rendimiento bajo");
+
+
+
+    </script>
+</body>
+
+</html>

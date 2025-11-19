@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    
+let edad = parseInt(prompt("Ingrese su edad en años:"));
+let peso = parseFloat(prompt("Ingrese su peso en kg:"));
+let altura = parseFloat(prompt("Ingrese su altura en metros:"));
+
+let imc = peso / (altura * altura);
+imc = imc.toFixed(2); 
+
+
+
+if (imc < 18.5 && edad < 18) {
+    alert("Posible bajo desarrollo físico");
+} else if (imc > 30 && edad >= 40) {
+    alert("Requiere control médico");
+} else if (imc >= 18.5 && imc <= 25 && edad < 60) {
+    alert("Condición física adecuada");
+} else {
+    alert("Se recomienda seguimiento general");
+}
+alert("Su IMC es: " + imc);
+    </script>
+</body>
+</html>

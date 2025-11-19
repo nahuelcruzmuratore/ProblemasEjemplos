@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let empleado = "";
+        let cantidad = 0;
+        let nombre = "";
+
+        while (empleado.toLowerCase() !== "salir") {
+            empleado = prompt("Ingresá nombre del empleado (o 'salir'): ");
+            if (empleado.toLowerCase() !== "salir") {
+                cantidad++;
+                nombre += empleado + "\n";
+            }
+        }
+
+        alert("Se registraron " + cantidad + " empleados.");
+        alert(nombre)
+
+    </script>
+</body>
+</html>

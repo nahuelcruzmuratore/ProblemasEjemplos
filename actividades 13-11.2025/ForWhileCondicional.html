@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+ <h6>
+Requisitos del programa:
+El usuario debe ingresar cuántas ventas desea registrar.
+Por cada venta, el programa debe solicitar el monto de la venta
+Si el monto ingresado es menor a $10.000, se debe mostrar un mensaje de error y volver a pedir el valor hasta que sea
+correcto.
+El programa debe calcular:
+
+🔹 El total vendido (suma de todas las ventas).
+🔹 El promedio de ventas.
+🔹 La venta más alta registrada.
+    <script>
+
+let totalVentas = 0;
+let ventaMayor = 0;
+
+let cantidad = parseInt(prompt("¿Cuántas ventas desea ingresar?"));
+
+for (let i = 1; i <= cantidad; i++) {
+    let venta = parseFloat(prompt("Ingrese el monto de la venta N° " + i + ":"));
+
+
+    while ( venta < 10000) {
+        alert(" Error: la venta debe ser mayor o igual a 10,000.");
+        venta = parseFloat(prompt("Ingrese nuevamente el monto de la venta N° " + i + ":"));
+    }
+
+    totalVentas += venta;
+
+    if (venta > ventaMayor) {
+        ventaMayor = venta;
+    }
+}
+
+
+let promedio = totalVentas / cantidad;
+
+
+alert(
+    " Resultados:\n" +
+    "Total vendido: $" + totalVentas.toFixed(2) + "\n" +
+    "Promedio de ventas: $" + promedio.toFixed(2) + "\n" +
+    "Venta más alta: $" + ventaMayor.toFixed(2)
+);
+
+
+    </script>
+</body>
+
+</html>

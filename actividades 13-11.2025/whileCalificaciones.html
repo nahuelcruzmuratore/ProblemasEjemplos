@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h6>
+Usando una estructura while y condicionales 
+crea un programa en JavaScript que permita ingresar calificaciones de alumnos de manera sucesiva. El programa debe
+cumplir con las siguientes condiciones:
+Las calificaciones deben ser números entre 1 y 10.
+El ingreso de calificaciones termina cuando el usuario ingresa -1.
+
+El programa debe calcular el promedio de todas las calificaciones válidas ingresadas.
+Según el valor del promedio, el programa debe mostrar un mensaje de clasificación:
+Promedio mayor que 8 → "Excelente"
+Promedio entre 6 y 8 → "Bueno"
+Promedio entre 4 y 6 → "Regular"
+Promedio menor que 4 → "Insuficiente"
+
+Al final, se debe mostrar un alert con el promedio. Un alert con la clasificacion 
+</h6>
+
+<body>
+
+    <script>
+        let suma = 0;
+        let contador = 0;
+        let calificacion = parseFloat(prompt("Ingresar calificacion"))
+        while (calificacion !== -1) {
+            if (calificacion >= 1 && calificacion <= 10) {
+                suma += calificacion;
+                contador++;
+
+            }
+            else {
+                alert("la calificacion debe ser entre 1 y 10")
+
+            }
+            calificacion = parseFloat(prompt("Ingresar calificacion"))
+        }
+
+        
+            let promedio = suma / contador;
+            alert("promedio" + promedio.toFixed(2));
+
+            if (promedio > 8) {
+                alert("exelente")
+            } else if (promedio >= 6) {
+                alert("bueno")
+            } else if (promedio >= 4) {
+                alert("regular")
+
+            } else (
+                alert("Insuficiente")
+            )
+
+
+        
+
+    </script>
+</body>
+
+</html>
