@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>sumar los valores numericos del objeto (total de gastos)</h1>
+</body>
+
+<script>
+    let gastos = {
+        alquiler: 12000,
+        luz: 5000,
+        agua: 7000,
+        sueldos: 50000,
+    }
+
+    let total = 0;
+
+    for (let gasto in gastos) {
+        total += gastos[gasto]
+    }
+
+    alert("los gastos fueros " + total)
+</script>
+
+</html>

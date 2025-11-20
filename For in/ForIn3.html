@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<h6>
+    Dado un objeto productos que contiene varias categorías y sus respectivos productos, escribe un programa que
+    determine cuál categoría tiene la mayor cantidad de productos y muestre un mensaje indicando el nombre de esa categoría junto
+    con la cantidad de productos que contiene.
+</h6>
+
+<body>
+
+
+    <script>
+        let productos = {
+            tecnologia: ["nootbok", "Mouse", "Monitos", "otra prueba"],
+            libreria: ["lapices", "Cuadernos", "marcadores"],
+            oficina: ["sillas", "carpetas", "resmas", "otra prueba", "otra prueba"]
+
+        }
+
+        let mayorcategoria = "";
+        let mayorCantidad = 0;
+
+        for (let categoria in productos) {
+            let cantidad = productos[categoria].length;
+
+            if (cantidad > mayorCantidad) {
+                mayorCantidad = cantidad;
+                mayorcategoria = categoria;
+            }
+
+
+
+        }
+
+        alert("categoria con mas productos" + mayorcategoria + "( " + mayorCantidad + " )")
+
+
+    </script>
+</body>
+
+</html>

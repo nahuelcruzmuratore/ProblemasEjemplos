@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h6>Contar productos con stock menor a 10 y mostar nombre de productos</h6>
+
+    <script>
+        let inventario = {
+         lapices : 25,
+         cuadernos: 8,
+         marcadores : 12,
+         carpetas : 40,
+         libros_pastor : 60, 
+         libros_Borges: 5, 
+
+        }
+
+        let stockNajo = 0;
+        let Nombreproducto = []
+
+        for (let produc in inventario) {
+            
+            if (inventario[produc] <10)
+        {
+            Nombreproducto.push(produc);
+             stockNajo++;
+            
+        }
+           
+            
+        }alert("cantidad de producto menor  : " + stockNajo)
+        alert("nombres de los productos : " +  Nombreproducto.join("\n"))
+    </script>
+</body>
+</html>
